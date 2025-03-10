@@ -32,7 +32,7 @@ class PostController extends Controller
         return response()->json([
             'status' => 200,
             'data' => $post,
-        ], 200);
+        ], 201);
     }
 
     /**
@@ -99,6 +99,6 @@ class PostController extends Controller
             'status' => 200,
             'data' => [],
             'message' => 'Post deleted successfully'
-        ], 200);
+        ], 204);
     }
 }
